@@ -1,4 +1,4 @@
-{% set version = '1.0.0' %}
+{% set version = "1.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/trackdown_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/trackdown/trackdown_{{ version }}.tar.gz
-  sha256: 885689743abb1fd572e71ec33643f70b462686ab4f25edee38b8335d0a68a4cc
+  sha256: ee00dad242cce53009375bfc98d3a2142b73a38798e1bea2df45b8765dc315d1
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -43,15 +43,11 @@ test:
 about:
   home: https://github.com/claudiozandonella/trackdown/, https://claudiozandonella.github.io/trackdown/
   license: GPL-3.0-only
-  summary: "Collaborative writing and editing of R Markdown (or Sweave) documents. The local
-    .Rmd (or .Rnw) is uploaded as a plain-text file to Google Drive. By taking advantage
-    of the easily readable Markdown (or LaTeX) syntax and the well-known online interface
-    offered by Google Docs, collaborators can easily contribute to the writing and editing
-    process. After integrating all authors\u2019 contributions, the final document can
-    be downloaded and rendered locally."
+  summary: Collaborative writing and editing of R Markdown (or Sweave) documents. The local .Rmd (or .Rnw) is uploaded as a plain-text file to Google Drive. By taking advantage of the easily readable Markdown (or LaTeX) syntax and the well-known online interface offered by Google Docs, collaborators can easily contribute
+    to the writing and editing process. After integrating all authors’ contributions, the final document can be downloaded and rendered locally.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
