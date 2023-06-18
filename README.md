@@ -1,11 +1,11 @@
-About r-trackdown
-=================
+About r-trackdown-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-trackdown-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/claudiozandonella/trackdown/, https://claudiozandonella.github.io/trackdown/
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-trackdown-feedstock/blob/main/LICENSE.txt)
 
 Summary: Collaborative writing and editing of R Markdown (or Sweave) documents. The local .Rmd (or .Rnw) is uploaded as a plain-text file to Google Drive. By taking advantage of the easily readable Markdown (or LaTeX) syntax and the well-known online interface offered by Google Docs, collaborators can easily contribute to the writing and editing process. After integrating all authors’ contributions, the final document can be downloaded and rendered locally.
 
